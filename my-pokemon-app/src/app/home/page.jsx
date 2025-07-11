@@ -64,7 +64,10 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className=" bg-black !px-4 !py-8 " style={{ height: "86.8vh" }}>
+    <div
+      className=" bg-black !px-4 !py-8 "
+      style={{ height: "86.8vh", overflow: "auto", scrollbarWidth: "none" }}
+    >
       {pokemons?.length === 0 || isLoading ? (
         <p className="text-white text-center text-xl">Loading Pokémon...</p>
       ) : (
